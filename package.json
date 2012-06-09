@@ -1,0 +1,45 @@
+{
+  "name": "aws-cred",
+  "description": "Share your aws credentials across apps through yaml files in /etc",
+  "url": "https://github.com/hamman/aws-cred",
+  "keywords": [
+    "amazon",
+    "aws",
+    "credentials",
+    "authentication"
+  ],
+  "author": {
+    "name": "Brian Hamman",
+    "email": "hamman+github@gmail.com"
+  },
+  "licenses": [
+    "MIT"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hamman/aws-cred.git"
+  },
+  "dependencies": {
+    "js-yaml": "0.3.7"
+  },
+  "main": "./lib/aws-cred",
+  "version": "0.1",
+  "scripts": {
+    "test": "node test/*-test.js"
+  },
+  "directories": {
+    "lib": "./lib",
+    "test": "./test"
+  },
+  "engines": {
+    "node": "> 0.1.90"
+  },
+  "_id": "aws-cred@0.1.7",
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "_engineSupported": true,
+  "_npmVersion": "1.1.16",
+  "_nodeVersion": "v0.6.15",
+  "_defaultsLoaded": true,
+  "_from": "aws-cred"
+}
