@@ -27,7 +27,7 @@ Require and configure aws-cred in your app. This loads /etc/aws.conf:
 
 You can also specify an environment to load different files. This is useful if you want to maintain different keys for production, development, staging, etc:
 
-	//this sets the environment do "donkey" and loads /etc/aws.donkey.conf
+	//this sets the environment to "donkey" and loads /etc/aws.donkey.conf
 	awscred = new AWSCred({"env": "donkey"});
 
 And you can manually set the path, in which case it ignores the environment:
