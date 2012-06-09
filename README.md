@@ -6,4 +6,32 @@ A Javascript port of Ben Koski's ruby gem aws_credentials, which provides a simp
 Installation
 ------------
 
-	npm install awscred
+	npm install aws-cred
+
+Usage
+-----
+
+Put a yaml file on your server under /etc/aws.conf that contains:
+
+	access_key: YOUR_KEY_HERE (required)
+	secret_access_key: YOUR_SECRET_KEY_HERE (required)
+	account_id: YOUR_KEY_HERE (optional)
+
+Require and configure aws-cred in your app. This loads /etc/aws.conf:
+
+	var AWSCred = require('aws-cred');
+	awscred = AWSCred.new({});
+	awscred.access_key;
+	awscred.secret_access_key;
+	awscred.account_id;
+
+You can also specify an environment to load different files. This is useful if you want to maintain different keys for production, development, staging, etc:
+
+	//this sets the environment do "donkey" and loads /etc/aws.donkey.conf
+	awscred = AWSCred.new({"env": "donkey"});
+
+And you can manually set the path, in which case it ignores the environment:
+
+	//this will load from /exactly/where/you/said/yourfile.conf
+	awscred = AWSCred.new({"config_path": "/exactly/where/you/said/yourfile.conf"});
+
