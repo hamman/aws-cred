@@ -23,7 +23,7 @@
     "js-yaml": "0.3.7"
   },
   "main": "./lib/aws-cred",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "scripts": {
     "test": "node_modules/.bin/nodeunit test"
   },
