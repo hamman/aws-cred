@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/hamman/aws-cred.png)](http://travis-ci.org/hamman/aws-cred)
 Aws-Cred
 ========
 
